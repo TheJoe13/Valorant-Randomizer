@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valorant Randomizer</title>
+    </head>
+    <body>
+        <script>
+            var agents = ["Breach","Brimstone","Cypher","Jett","Killjoy","Omen","Pheonix","Raze","Reyna","Sage","Sova","Skye","Viper","Yoru"];
+            var guns = ["Classic","Shorty","Frenzy","Ghost","Sheriff","Stinger","Spectre","Bulldog","Guardian","Phantom","Vandal","Bucky","Judge","Ares","Odin","Marshal","Operator"]
+
+            function randomAgent () {
+                var i = Math.floor(Math.random() * agents.length);
+                document.getElementById("text2").innerHTML = agents[i];
+            }
+
+            function randomGun () {
+                var i = Math.floor(Math.random() * guns.length);
+                document.getElementById("text1").innerHTML = guns[i];
+            }
+
+        </script>
+        <h1>Click for Random Gun</h1>
+        <button type="button" onclick= "randomGun()">Click me Coward</button>
+        <h2 id="text1">Click it</h2>
+        <h1>Click for Random Agent</h1>
+        <button type="button" onclick= "randomAgent()">Click me Coward</button>
+        <h2 id="text2">Click it</h2>
+    </body>
